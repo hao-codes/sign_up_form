@@ -8,16 +8,39 @@ body {
 
 }
 
+.bg_image {
+    background-image: url("pawel-czerwinski-unsplash_bg_image.jpg");
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 900px;
+    color: white;
+
+}
+
 div {
     justify-content: center;
     align-items: center;
 
 }
 
-img {
-    width: 800px;
-    height: 1800px;
-    margin-right: 30px;    
+a:link {
+    color: ;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: dotted;
+}
+
+
+#photo_info {
+    text-align: center;
+
 }
 form {
 
