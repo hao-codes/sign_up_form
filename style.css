@@ -32,19 +32,34 @@ div {
 
 }
 
-a:link {
-    color: ;
-}
 
-a:visited {
+
+
+a.photo-source:visited {
     color: white;
     text-decoration: none;
 }
 
-a:hover {
+a.photo-source:hover {
     color: gray;
     text-decoration: dotted;
 }
+
+
+a.log-in {
+    color: #44c767;
+    text-decoration: none;
+}
+
+a.log-in:visited {
+    color: #44c767;
+}
+
+a.log-in:hover {
+    color: #2b5c14;
+    text-decoration: dotted;
+}
+
 
 #img_sidebar {
     display: flex;
