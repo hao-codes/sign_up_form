@@ -32,20 +32,20 @@
     -->
     <div class="bg_image">
         <div id="img_sidebar">
-            
+
             <img src="icons8-money-100.png" alt="money image"> Easy Money Scam Sign up Form
         </div>
-            <div id="photo_info">
-                Photo by <a href="https://unsplash.com/de/@pawel_czerwinski"> Pawel Czerwinski </a> on <a
-                    href="https://unsplash.com/"> Unsplash</a>
+        <div id="photo-info">
+            Photo by <a href="https://unsplash.com/de/@pawel_czerwinski"> Pawel Czerwinski </a> on <a
+                href="https://unsplash.com/"> Unsplash</a>
 
-            </div> <!--
+        </div> <!--
         Source of image: https://unsplash.com/de/fotos/ein-computergeneriertes-bild-eines-wellenformigen-braunen-hintergrunds-a-MyyO6Z8pY
         from Pawel Czerwinski
     -->
-        
+
     </div>
-    <div>
+    <div class="form-container">
         This is not a real online service! You know you need something like this in your life to help to realize your
         deepest dreams.
         <p>Sign up <i>now</i> to get started! </p>
@@ -55,29 +55,43 @@
 
         <form>
             <h1>Let's do this!</h1>
-            <p>
+
+            <div class="input-container">
                 <label for="first_name">First Name</label>
-                <input type="text" required>
+                <input type="text" id="first-name" required>
+            </div>
+            <div class="input-container">
                 <label for="last_name">Last Name</label>
-                <input type="text" required>
-            </p>
-            <p>
+                <input type="text" id="last-name" required>
+            </div>
+
+
+            <div class="input-container">
                 <label for="email">Email Address</label>
-                <input type="email" required>
+                <input type="email" id="email" required>
+            </div>
+            <div class="input-container">
                 <label for="phone_number">Phone Number</label>
-                <input type="tel">
-            </p>
+                <input type="tel" id="telephone">
+            </div>
 
-            <p>
+
+
+            <div class="input-container">
                 <label for="password">Password</label>
-                <input type="password" required>
+                <input type="password" id="password" required>
+            </div>
+            <div class="input-container">
                 <label for="password_confirm">Confirm Password</label>
-                <input type="password" required>
-            </p>
+                <input type="password" id="password-confirm" required>
+            </div>
 
-            <button>Create Account</button>
-
+            <div class="button-container">
+                <button class="button">Create Account</button>
+            </div>
         </form>
+
+        Already have a account? Log in to keep scamming 
     </div>
 </body>
 
