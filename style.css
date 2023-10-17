@@ -1,8 +1,9 @@
 html {
     height: 100%;
 }
+
 body {
-    
+
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
     display: flex;
@@ -17,7 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     color: white;
     display: flex;
     width: 40vw;
@@ -32,6 +33,9 @@ div {
 
 }
 
+input:valid {
+    outline: 2px solid #44c767;
+}
 
 
 
@@ -64,7 +68,7 @@ a.log-in:hover {
 #img_sidebar {
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 15%;
@@ -73,13 +77,14 @@ a.log-in:hover {
 #photo-info {
     position: absolute;
     bottom: 0;
-    
+
     text-align: center;
     align-items: center;
     justify-content: center;
-    
+
 
 }
+
 .form-container {
     font-size: 30px;
     display: flex;
@@ -88,15 +93,16 @@ a.log-in:hover {
 }
 
 
-label,input{
-    display:block;
-    
-  }
+label, input {
+    display: block;
+
+}
 
 
 input {
     font-size: 25px;
 }
+
 .input-container {
     display: flex;
     flex-flow: column wrap;
@@ -105,23 +111,25 @@ input {
 }
 
 .button {
-	
-	background-color:#44c767;
-	border-radius:8px;
-	border:2px solid black;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	
-	font-size:35px;
-	padding:17px 31px;
-	text-decoration:none;
+
+    background-color: #44c767;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+
+    font-size: 35px;
+    padding: 17px 31px;
+    text-decoration: none;
 }
+
 .button:hover {
-	
-	background-color:#2b5c14;
+
+    background-color: #2b5c14;
 }
+
 .button:active {
-	position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }

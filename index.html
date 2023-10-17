@@ -11,34 +11,14 @@
 </head>
 
 <body>
-
-    <!--
-        - create html form elements
-        2 parts: left image, right info and form
-        image: image as background, add image sidebar with odin logo
-        on bottom: source of bg photo
-
-        form:
-        top - information
-        sign up form
-        create account button
-        another option for log in
-
-        - add validation
-        - add image
-        - work on basic style and format of page
-        - add different style for form controls based on input
-        - check the resolution for smaller screens
-        - try to validate password with JS
-    -->
     <div class="bg_image">
         <div id="img_sidebar">
 
             <img src="icons8-money-100.png" alt="money image"> Easy Money Scam Sign up Form
         </div>
         <div id="photo-info">
-            Photo by <a href="https://unsplash.com/de/@pawel_czerwinski" class="photo-source"> Pawel Czerwinski </a> on <a
-                href="https://unsplash.com/" class="photo-source"> Unsplash</a>
+            Photo by <a href="https://unsplash.com/de/@pawel_czerwinski" class="photo-source"> Pawel Czerwinski </a> on
+            <a href="https://unsplash.com/" class="photo-source"> Unsplash</a>
 
         </div> <!--
         Source of image: https://unsplash.com/de/fotos/ein-computergeneriertes-bild-eines-wellenformigen-braunen-hintergrunds-a-MyyO6Z8pY
@@ -72,19 +52,20 @@
                 <input type="email" id="email" required>
             </div>
             <div class="input-container">
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="telephone">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="telephone" required pattern="[0-9]{10}">
             </div>
 
 
 
             <div class="input-container">
                 <label for="password">Password</label>
-                <input type="password" id="password" required>
+                (must contain a lowercase character, a uppercase character, a number, minimum length: 8 characters)
+                <input type="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
             </div>
             <div class="input-container">
                 <label for="password_confirm">Confirm Password</label>
-                <input type="password" id="password-confirm" required>
+                <input type="password" id="password-confirm" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
             </div>
 
             <div class="button-container">
@@ -92,7 +73,7 @@
             </div>
         </form>
 
-        Already have a account? <a href="" class="log-in">Log in</a>  to keep scamming 
+        Already have a account? <a href="" class="log-in">Log in</a> to keep scamming
     </div>
 </body>
 
